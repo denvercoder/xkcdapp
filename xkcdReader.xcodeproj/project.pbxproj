@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D772CB0B1F481C07001AF088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772CB0A1F481C07001AF088 /* AppDelegate.swift */; };
-		D772CB0D1F481C07001AF088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772CB0C1F481C07001AF088 /* ViewController.swift */; };
 		D772CB101F481C07001AF088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D772CB0E1F481C07001AF088 /* Main.storyboard */; };
 		D772CB121F481C07001AF088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D772CB111F481C07001AF088 /* Assets.xcassets */; };
 		D772CB151F481C07001AF088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D772CB131F481C07001AF088 /* LaunchScreen.storyboard */; };
 		D772CB201F481C07001AF088 /* xkcdReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772CB1F1F481C07001AF088 /* xkcdReaderTests.swift */; };
 		D772CB2B1F481C07001AF088 /* xkcdReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772CB2A1F481C07001AF088 /* xkcdReaderUITests.swift */; };
+		D772CB391F481CD3001AF088 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772CB381F481CD3001AF088 /* MainTableViewController.swift */; };
+		D772CB3B1F481D45001AF088 /* xkcd.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772CB3A1F481D45001AF088 /* xkcd.swift */; };
+		D7BC53A61F494AA700CFA0EA /* GetCurrentComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BC53A51F494AA700CFA0EA /* GetCurrentComic.swift */; };
+		D7D8892E1F52D86F0016FB26 /* GetAllComics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D8892D1F52D86F0016FB26 /* GetAllComics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		D772CB071F481C07001AF088 /* xkcdReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xkcdReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D772CB0A1F481C07001AF088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D772CB0C1F481C07001AF088 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D772CB0F1F481C07001AF088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D772CB111F481C07001AF088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D772CB141F481C07001AF088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		D772CB261F481C07001AF088 /* xkcdReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xkcdReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D772CB2A1F481C07001AF088 /* xkcdReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xkcdReaderUITests.swift; sourceTree = "<group>"; };
 		D772CB2C1F481C07001AF088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D772CB381F481CD3001AF088 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		D772CB3A1F481D45001AF088 /* xkcd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xkcd.swift; sourceTree = "<group>"; };
+		D7BC53A51F494AA700CFA0EA /* GetCurrentComic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentComic.swift; sourceTree = "<group>"; };
+		D7D8892D1F52D86F0016FB26 /* GetAllComics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllComics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				D772CB0A1F481C07001AF088 /* AppDelegate.swift */,
-				D772CB0C1F481C07001AF088 /* ViewController.swift */,
 				D772CB0E1F481C07001AF088 /* Main.storyboard */,
 				D772CB111F481C07001AF088 /* Assets.xcassets */,
 				D772CB131F481C07001AF088 /* LaunchScreen.storyboard */,
 				D772CB161F481C07001AF088 /* Info.plist */,
+				D772CB381F481CD3001AF088 /* MainTableViewController.swift */,
+				D772CB3A1F481D45001AF088 /* xkcd.swift */,
+				D7BC53A51F494AA700CFA0EA /* GetCurrentComic.swift */,
+				D7D8892D1F52D86F0016FB26 /* GetAllComics.swift */,
 			);
 			path = xkcdReader;
 			sourceTree = "<group>";
@@ -256,7 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D772CB0D1F481C07001AF088 /* ViewController.swift in Sources */,
+				D772CB3B1F481D45001AF088 /* xkcd.swift in Sources */,
+				D772CB391F481CD3001AF088 /* MainTableViewController.swift in Sources */,
+				D7BC53A61F494AA700CFA0EA /* GetCurrentComic.swift in Sources */,
+				D7D8892E1F52D86F0016FB26 /* GetAllComics.swift in Sources */,
 				D772CB0B1F481C07001AF088 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
